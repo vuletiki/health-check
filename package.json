@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/pm2/bin/pm2 start config.js",
+    "restart": "./node_modules/pm2/bin/pm2 restart config.js",
+    "stop": "./node_modules/pm2/bin/pm2 stop config.js"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "cron": "^1.7.1",

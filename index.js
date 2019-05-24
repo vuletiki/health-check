@@ -94,12 +94,20 @@ const summaryResult = datas => {
 		    })
 		}
 	})
-	request.post(HOOK).form({
-		payload: JSON.stringify({
-			"text":"<!here|here> List page is slow!",
-		   	attachments
+	if(attachments.length > 0) {
+		request.post(HOOK).form({
+			payload: JSON.stringify({
+				"text":"<!here|here> List page is slow!",
+			   	attachments
+			})
 		})
-	})
+	} else {
+		request.post(HOOK).form({
+			payload: JSON.stringify({
+				"text":"Everything look good!"
+			})
+		})
+	}
 }
 
 var CronJob = require('cron').CronJob;

@@ -6,6 +6,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cron": "^1.7.1",
+    "pm2": "^3.5.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   }

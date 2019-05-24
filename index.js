@@ -104,7 +104,7 @@ const summaryResult = datas => {
 
 var CronJob = require('cron').CronJob;
 console.log('cron start')
-var job = new CronJob('* */5 * * * *', function() {
+var job = new CronJob('0 */5 * * * *', function() {
 	console.log('cron run')
 	try {
 

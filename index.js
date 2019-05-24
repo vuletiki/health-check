@@ -103,7 +103,9 @@ const summaryResult = datas => {
 }
 
 var CronJob = require('cron').CronJob;
-var job = new CronJob('0 */5 * * * *', function() {
+console.log('cron start')
+var job = new CronJob('* * * * * *', function() {
+	console.log('cron run')
 	try {
 
 		request.post(HOOK).form({

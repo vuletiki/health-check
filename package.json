@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/pm2/bin/pm2 start config.js",
-    "restart": "./node_modules/pm2/bin/pm2 restart config.js",
-    "stop": "./node_modules/pm2/bin/pm2 stop config.js"
+    "start": "./node_modules/pm2/bin/pm2 start ./index.js",
+    "restart": "./node_modules/pm2/bin/pm2 restart ./index.js",
+    "stop": "./node_modules/pm2/bin/pm2 stop ./index.js"
   },
   "dependencies": {
     "axios": "^0.18.0",

@@ -102,11 +102,11 @@ const summaryResult = datas => {
 			})
 		})
 	} else {
-		request.post(HOOK).form({
-			payload: JSON.stringify({
-				"text":"Everything look good!"
-			})
-		})
+		// request.post(HOOK).form({
+		// 	payload: JSON.stringify({
+		// 		"text":"Everything look good!"
+		// 	})
+		// })
 	}
 }
 
@@ -116,11 +116,11 @@ var job = new CronJob('0 */5 * * * *', function() {
 	console.log('cron run')
 	try {
 
-		request.post(HOOK).form({
-			payload: JSON.stringify({
-				"text":"Start to hit!",
-			})
-		})
+		// request.post(HOOK).form({
+		// 	payload: JSON.stringify({
+		// 		"text":"Start to hit!",
+		// 	})
+		// })
 
 		let prs = []
 		hitList.map(item => {

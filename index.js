@@ -32,6 +32,12 @@ const hitList = [
 		url: 'https://tiki.vn/chuong-trinh/tiki-xiaomi-now',
 		platform: 'mobile',
 		threshold: 1000
+	},
+	{
+		alias: 'SELLER PAGE',
+		url: 'https://tiki.vn/cua-hang/gog-store-giay-cao-nam-hang-hieu',
+		platform: 'desktop',
+		threshold: 1000
 	}
 ]
 

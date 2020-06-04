@@ -1,4 +1,4 @@
-const HOOK = 'https://hooks.slack.com/services/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';
+const HOOK = 'https://hooks.slack.com/services/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';
 var cron = require('cron');
 var request = require('request');
 

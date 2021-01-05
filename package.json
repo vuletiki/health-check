@@ -9,7 +9,7 @@
     "stop": "./node_modules/pm2/bin/pm2 stop index"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "cron": "^1.7.1",
     "pm2": "^3.5.1",
     "request": "^2.88.0",
